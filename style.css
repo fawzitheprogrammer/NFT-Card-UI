@@ -1,0 +1,136 @@
+body {
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Poppins';
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    padding: 18px 18px;
+    background-color: hsl(216, 50%, 16%);
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+    /* justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;  */
+}
+
+.nft-view {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.nft-view img {
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.nft-view .overlay {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom:10px;
+    border-radius: 10px;
+    background-color: hsla(178, 100%, 50%, 0.671);
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+}
+
+.nft-view div:hover  {
+    opacity: 1;
+}
+
+.attribution img {
+    border-radius: 10px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.etherum-info .header {
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+.etherum-info .header:hover , .author .author-name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.etherum-info p {
+    color: hsl(239, 48%, 83%);
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    margin-top: 8px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px white solid;
+}
+
+
+.author .created-by {
+    font-size: 12px;
+    margin: 0px 10px;
+    font-weight: 300;
+}
+
+.author .author-name {
+    font-weight: 500;
+    font-size: 12px;
+
+}
+
+hr {
+    width: 100%;
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+    height: 0.1px;
+}
+
+.etherum {
+    font-size: 14px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.etherum-price-with-duration {
+    display: flex;
+    justify-content: space-between;
+}
+
+.etherum-price span {
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.etherum-duration-left span {
+    font-weight: bold;
+    color: #8BACD9;
+    margin-left: 8px;
+}
+
+
+@media  (max-width:375px) {
+    .attribution {
+        width: 250px;
+        font-size: 0.7rem;
+    }
+}
